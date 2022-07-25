@@ -3,7 +3,6 @@ package com.day2.arrayList;
 import java.util.ArrayList;
 import java.util.Collections;
 
-
 public class Exercise {
 
     public static void main(String[] args) {
