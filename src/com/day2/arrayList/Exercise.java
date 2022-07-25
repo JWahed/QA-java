@@ -3,7 +3,6 @@ package com.day2.arrayList;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import static java.util.Collections.reverseOrder;
 
 public class Exercise {
 
