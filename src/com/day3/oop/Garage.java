@@ -15,6 +15,21 @@ public class Garage {
     private ArrayList<Vehicle> needFixing;
 
 
+    // Getters and Setters
+    public ArrayList<Vehicle> getNeedFixing() {
+        return needFixing;
+    }
+
+    public void setNeedFixing(ArrayList<Vehicle> needFixing) {
+        this.needFixing = needFixing;
+    }
+
+
+    // Constructor
+    public Garage(ArrayList<Vehicle> needFixing) {
+        this.needFixing = needFixing;
+    }
+
     // Methods
     public double calculateBill(ArrayList<Vehicle> inGarage) {
 
