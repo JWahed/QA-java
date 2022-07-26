@@ -60,9 +60,7 @@ public class Garage {
 
     public double fixVehicle() {
         double bill = calculateBill(needFixing);
-        for (Vehicle v : needFixing) {
-            needFixing.remove(v);
-        }
+        needFixing.clear();
         return bill;
     }
 }

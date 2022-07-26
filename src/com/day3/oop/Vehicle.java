@@ -6,6 +6,8 @@ public class Vehicle {
     private long id;
     private String model;
     private int mileage;
+
+
     private int manufactureDate;
     private boolean insured;
 
@@ -50,5 +52,16 @@ public class Vehicle {
     public void setInsured(boolean insured) {
         this.insured = insured;
     }
-    
+
+    // Constructor
+    public Vehicle() {
+        
+    }
+    public Vehicle(long id, String model, int mileage, int manufactureDate, boolean insured) {
+        this.id = id;
+        this.model = model;
+        this.mileage = mileage;
+        this.manufactureDate = manufactureDate;
+        this.insured = insured;
+    }
 }

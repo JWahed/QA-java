@@ -18,8 +18,9 @@ public class Motorbike extends Vehicle {
         public Motorbike() {
         }
 
-        public Motorbike(int engineCC) {
-                super();
+        public Motorbike(long id, String model, int mileage, int manufactureDate, boolean insured,
+                         int engineCC) {
+                super(id, model, mileage, manufactureDate, insured);
                 this.engineCC = engineCC;
         }
 }
