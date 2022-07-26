@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Truck extends Vehicle {
 
     // Attributes
-    public String engineType;
-    public double engineLitreSize;
+    private String engineType;
+    private double engineLitreSize;
     private ArrayList<String> amenities;
 
 
