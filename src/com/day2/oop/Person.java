@@ -20,7 +20,7 @@ public class Person {
     }
     // Create a method to return all three of these in a formatted string.
     public String toString() {
-        return String.format("Name: %s\n Age: %d\n Job Title: %s\n", this.name, this.age, this.jobTitle);
+        return String.format("Name: %s\nAge: %d\nJob Title: %s\n", this.name, this.age, this.jobTitle);
     }
     public static Person findByName(String name, List<Person> persons) {
         for (Person p: persons) {
