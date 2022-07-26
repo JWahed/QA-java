@@ -21,7 +21,7 @@ public class Runner {
         people.add(p4);
         people.add(p5);
 
-        // Create a method that can search for a specific Person by their name.
+        // Finding person by name
         Person.findByName("Jakob", people);
     }
 }
