@@ -24,7 +24,7 @@ public class Person {
     }
     public static Person findByName(String name, List<Person> persons) {
         for (Person p: persons) {
-            if (p.getName().equals(name)) {
+            if (p.getName().equalsIgnoreCase(name)) {
                 return p;
             }
         }
