@@ -40,7 +40,7 @@ public class Car extends Vehicle {
     }
 
     public Car(long id, String model, int mileage, int manufactureYear, boolean insured,
-               String engineType, int engineLitreSize, int doors) {
+               String engineType, double engineLitreSize, int doors) {
         super(id, model, mileage, manufactureYear, insured);
         this.engineType = engineType;
         this.engineLitreSize = engineLitreSize;
