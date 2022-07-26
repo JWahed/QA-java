@@ -39,9 +39,9 @@ public class Car extends Vehicle {
         super();
     }
 
-    public Car(long id, String model, int mileage, int manufactureDate, boolean insured,
+    public Car(long id, String model, int mileage, int manufactureYear, boolean insured,
                String engineType, int engineLitreSize, int doors) {
-        super(id, model, mileage, manufactureDate, insured);
+        super(id, model, mileage, manufactureYear, insured);
         this.engineType = engineType;
         this.engineLitreSize = engineLitreSize;
         this.doors = doors;

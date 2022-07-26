@@ -6,9 +6,7 @@ public class Vehicle {
     private long id;
     private String model;
     private int mileage;
-
-
-    private int manufactureDate;
+    private int manufactureYear;
     private boolean insured;
 
 
@@ -37,12 +35,12 @@ public class Vehicle {
         this.mileage = mileage;
     }
 
-    public int getManufactureDate() {
-        return manufactureDate;
+    public int getManufactureYear() {
+        return manufactureYear;
     }
 
-    public void setManufactureDate(int manufactureDate) {
-        this.manufactureDate = manufactureDate;
+    public void setManufactureYear(int manufactureYear) {
+        this.manufactureYear = manufactureYear;
     }
 
     public boolean isInsured() {
@@ -55,13 +53,13 @@ public class Vehicle {
 
     // Constructor
     public Vehicle() {
-        
+
     }
-    public Vehicle(long id, String model, int mileage, int manufactureDate, boolean insured) {
+    public Vehicle(long id, String model, int mileage, int manufactureYear, boolean insured) {
         this.id = id;
         this.model = model;
         this.mileage = mileage;
-        this.manufactureDate = manufactureDate;
+        this.manufactureYear = manufactureYear;
         this.insured = insured;
     }
 }

@@ -41,9 +41,9 @@ public class Truck extends Vehicle {
 
     }
 
-    public Truck(long id, String model, int mileage, int manufactureDate, boolean insured,
+    public Truck(long id, String model, int mileage, int manufactureYear, boolean insured,
                  String engineType, int engineLitreSize, ArrayList<String> amenities) {
-        super(id, model, mileage, manufactureDate, insured);
+        super(id, model, mileage, manufactureYear, insured);
         this.engineType = engineType;
         this.engineLitreSize = engineLitreSize;
         this.amenities = amenities;
