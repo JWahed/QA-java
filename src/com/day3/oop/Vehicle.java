@@ -1,6 +1,6 @@
 package com.day3.oop;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     // Attributes
     private long id;
