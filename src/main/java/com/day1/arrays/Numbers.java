@@ -1,4 +1,4 @@
-package main.java.com.day1.arrays;
+package com.day1.arrays;
 
 public class Numbers {
 
