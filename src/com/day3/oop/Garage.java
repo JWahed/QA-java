@@ -31,11 +31,11 @@ public class Garage {
     }
 
     // Methods
-    public double calculateBill(ArrayList<Vehicle> inGarage) {
+    public double calculateBill() {
 
         double bill = 0;
 
-        for (Vehicle v : inGarage) {
+        for (Vehicle v : needFixing) {
 
             if (v instanceof Motorbike) {
                 bill = BASE_CHARGE + BASE_MOTORBIKE;
@@ -74,7 +74,7 @@ public class Garage {
     }
 
     public double fixVehicle() {
-        double bill = calculateBill(needFixing);
+        double bill = calculateBill();
         needFixing.clear();
         return bill;
     }
