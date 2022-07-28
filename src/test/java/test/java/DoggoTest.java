@@ -3,6 +3,7 @@ package test.java;
 import main.java.com.day4.Doggo;
 import org.junit.jupiter.api.Test;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,16 +16,19 @@ public class DoggoTest {
         String[] testArr1 = new String[100];
         String[] testArr2 = new String[99];
 
-        assertEquals(Doggo.position(0).size(), testArr1.length);
-        assertEquals(Doggo.position(1).size(), testArr2.length);
-        assertEquals(Doggo.position(100).size(), testArr2.length);
-        assertEquals(Doggo.position(101).size(), testArr1.length);
+        assertEquals(testArr1.length, Doggo.position(0).size());
+        assertEquals(testArr2.length, Doggo.position(1).size());
+        assertEquals(testArr2.length, Doggo.position(100).size());
+        assertEquals(testArr1.length, Doggo.position(101).size());
     }
     @Test
     void DoggoTestPosition() {
 
         ArrayList<String> testArr1= new ArrayList<>();
         testArr1.add("1st");
+        testArr1.add("11th");
+        testArr1.add("12th");
+        testArr1.add("13th");
         testArr1.add("42nd");
         testArr1.add("73rd");
         testArr1.add("80th");
