@@ -3,7 +3,7 @@ package main.java.com.day4;
 
 public class Factorial {
 
-    public static String reverse(int value) {
+    public static String reverse(float value) {
 
         if (value <= 0) {
             return "NONE";
@@ -17,9 +17,9 @@ public class Factorial {
             } else {
                 return "NONE";
             }
-
         }
-        return String.valueOf(count) + "!";
+
+        return count + "!";
     }
 
     public static void main(String[] args) {
