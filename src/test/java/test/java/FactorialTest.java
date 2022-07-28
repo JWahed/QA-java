@@ -9,15 +9,15 @@ public class FactorialTest {
 
     @Test
     void reverseTest() {
-        assertEquals(Factorial.reverse(0), "NONE");
-        assertEquals(Factorial.reverse(1), "1!");
-        assertEquals(Factorial.reverse(2), "2!");
-        assertEquals(Factorial.reverse(3), "NONE");
-        assertEquals(Factorial.reverse(6), "3!");
-        assertEquals(Factorial.reverse(18), "NONE");
-        assertEquals(Factorial.reverse(120), "5!");
-        assertEquals(Factorial.reverse(3628800), "10!");
-        assertEquals(Factorial.reverse(479001600), "12!");
+        assertEquals("NONE", Factorial.reverse(0));
+        assertEquals("1!", Factorial.reverse(1));
+        assertEquals("2!", Factorial.reverse(2));
+        assertEquals("NONE", Factorial.reverse(3));
+        assertEquals("3!", Factorial.reverse(6));
+        assertEquals("NONE", Factorial.reverse(18));
+        assertEquals("5!", Factorial.reverse(120));
+        assertEquals("10!", Factorial.reverse(3628800));
+        assertEquals("12!", Factorial.reverse(479001600));
 
     }
 }
