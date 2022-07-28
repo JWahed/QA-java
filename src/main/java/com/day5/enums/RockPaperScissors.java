@@ -1,4 +1,4 @@
-package com.day5;
+package com.day5.enums;
 
 import static java.lang.Math.random;
 

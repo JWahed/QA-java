@@ -1,4 +1,4 @@
-package com.day5;
+package com.day5.exceptions;
 
 public class ExceptionHandling {
 
