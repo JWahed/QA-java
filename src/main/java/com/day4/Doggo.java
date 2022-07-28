@@ -15,11 +15,11 @@ public class Doggo {
 
             int j = i-1;
             String s = arr.get(j);
-            if (s.endsWith("1")) {
+            if (s.endsWith("1") && !(s.equals("11"))) {
                 arr.set(j, s + "st");
-            } else if (s.endsWith("2")) {
+            } else if (s.endsWith("2") && !(s.equals("12"))) {
                 arr.set(j, s + "nd");
-            } else if (s.endsWith("3")) {
+            } else if (s.endsWith("3") && !(s.equals("13"))) {
                 arr.set(j, s + "rd");
             } else {
                 arr.set(j, s + "th");
@@ -33,7 +33,7 @@ public class Doggo {
     }
 
     public static void main(String[] args) {
-        System.out.println(position(10));
+        System.out.println(position(100));
 
     }
 }
