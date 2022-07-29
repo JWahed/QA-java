@@ -2,6 +2,7 @@ package com.day6.library;
 
 import java.time.LocalDate;
 
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -28,6 +29,21 @@ public class Runner {
         Map m2 = new Map("USA");
         Map m3 = new Map("China");
         Map m4 = new Map("Sweden");
+
+        lib.addItemToLibrary(b1);
+        lib.addItemToLibrary(b2);
+        lib.addItemToLibrary(b3);
+        lib.addItemToLibrary(b4);
+        lib.addItemToLibrary(b5);
+
+        lib.addItemToLibrary(np1);
+        lib.addItemToLibrary(np2);
+        lib.addItemToLibrary(np3);
+
+        lib.addItemToLibrary(m1);
+        lib.addItemToLibrary(m2);
+        lib.addItemToLibrary(m3);
+        lib.addItemToLibrary(m4);
 
     }
 }
