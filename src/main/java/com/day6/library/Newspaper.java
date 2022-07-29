@@ -45,8 +45,8 @@ public class Newspaper extends Items implements Readable {
 
     @Override
     public String toString() {
-        return "Newspapers{" +
-                ", Publisher: '" + publisher + '\'' +
+        return "Newspapers {" +
+                "Publisher: '" + publisher + '\'' +
                 ", Publish Date: " + publishDate +
                 ", Broadsheet: " + broadsheet +
                 '}';
