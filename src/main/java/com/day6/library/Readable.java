@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface Readable {
 
-    void Read(Book book, Person person);
+    void Read(Items a, Person person);
 }
