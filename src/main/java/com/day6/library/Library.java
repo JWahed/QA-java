@@ -44,7 +44,7 @@ public class Library {
     public static String itemCheckIn(Items item) {
         if (allItemsList.contains(item) && loanedItemsList.contains(item)) {
             loanedItemsList.remove(item);
-            usersList.removeIf(p -> p.getItemsLoaned().remove(item));
+            usersList.forEach(p -> p.getItemsLoaned().remove(item));
             return String.format("Item check in successful for item %d", item.getId());
 
         } else if (allItemsList.contains(item) && !loanedItemsList.contains(item)) {
