@@ -5,6 +5,8 @@ import java.time.LocalDate;
 
 public class Newspaper extends Items implements Readable {
 
+
+    private final int id = this.getId();
     private String publisher;
     private LocalDate publishDate;
     private boolean broadsheet;
@@ -45,8 +47,9 @@ public class Newspaper extends Items implements Readable {
 
     @Override
     public String toString() {
-        return "Newspapers {" +
-                "Publisher: '" + publisher + '\'' +
+        return "\nNewspapers {" +
+                "Item id: '" + id + '\'' +
+                ", Publisher: '" + publisher + '\'' +
                 ", Publish Date: " + publishDate +
                 ", Broadsheet: " + broadsheet +
                 '}';
