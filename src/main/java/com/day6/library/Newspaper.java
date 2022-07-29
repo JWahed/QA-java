@@ -5,19 +5,10 @@ import java.time.LocalDate;
 
 public class Newspaper extends Items implements Readable {
 
-    private String name;
     private String publisher;
     private LocalDate publishDate;
     private boolean broadsheet;
 
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getPublisher() {
         return publisher;
@@ -46,8 +37,7 @@ public class Newspaper extends Items implements Readable {
 
     public Newspaper() {}
 
-    public Newspaper(String name, String publisher, LocalDate publishDate, boolean broadsheet) {
-        this.name = name;
+    public Newspaper(String publisher, LocalDate publishDate, boolean broadsheet) {
         this.publisher = publisher;
         this.publishDate = publishDate;
         this.broadsheet = broadsheet;
@@ -56,17 +46,16 @@ public class Newspaper extends Items implements Readable {
     @Override
     public String toString() {
         return "Newspapers{" +
-                "name='" + name + '\'' +
-                ", publisher='" + publisher + '\'' +
-                ", publishDate=" + publishDate +
-                ", broadsheet=" + broadsheet +
+                ", Publisher: '" + publisher + '\'' +
+                ", Publish Date: " + publishDate +
+                ", Broadsheet: " + broadsheet +
                 '}';
     }
 
     @Override
     public void Read(Items np, Person person) {
         System.out.printf("Newspaper %s is currently being read by %s %s",
-                ((Newspaper) np).getName(), person.getFirstName(), person.getLastName()
+                ((Newspaper) np).getPublisher(), person.getFirstName(), person.getLastName()
         );
     }
 
