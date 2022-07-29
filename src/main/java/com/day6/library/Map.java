@@ -23,6 +23,6 @@ public class Map extends Items {
 
     @Override
     public String toString() {
-        return "This is a map of: " + country;
+        return "Map of: " + country;
     }
 }
