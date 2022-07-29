@@ -121,6 +121,7 @@ public class Library {
     public static String removeItemFromLibrary(Items item) {
         if (allItemsList.contains(item)) {
             allItemsList.remove(item);
+            loanedItemsList.remove(item);
             return "Item successfully removed";
 
         } else if (!allItemsList.contains(item)) {
@@ -147,13 +148,16 @@ public class Library {
     }
 
     public static String deleteUser(Person person) {
-        if (usersList.contains(person)) {
+        if (usersList.contains(person) && person.getItemsLoaned().isEmpty()) {
             String s = person.getFirstName() + " " + person.getLastName();
             usersList.remove(person);
             return String.format("%s has been removed", s);
 
         } else if (!usersList.contains(person)) {
             return "This person does not exist in usersList";
+
+        } else if (!person.getItemsLoaned().isEmpty()) {
+            return "This person can not be deleted as they have unchecked in items";
 
         } else {
             return "Deletion failed";
