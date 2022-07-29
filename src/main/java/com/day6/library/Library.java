@@ -5,26 +5,25 @@ import java.util.List;
 
 public class Library {
 
-
-    private static List<Items> allBooks;
-    private static List<Items> loanedBooks;
+    private static List<Items> allItems;
+    private static List<Items> loanedItems;
     private static List<Person> users;
 
 
-    public static List<Items> getAllBooks() {
-        return allBooks;
+    public static List<Items> getAllItems() {
+        return allItems;
     }
 
-    public static void setAllBooks(List<Items> allBooks) {
-        Library.allBooks = allBooks;
+    public static void setAllItems(List<Items> allItems) {
+        Library.allItems = allItems;
     }
 
-    public static List<Items> getLoanedBooks() {
-        return loanedBooks;
+    public static List<Items> getLoanedItems() {
+        return loanedItems;
     }
 
-    public static void setLoanedBooks(List<Items> loanedBooks) {
-        Library.loanedBooks = loanedBooks;
+    public static void setLoanedItems(List<Items> loanedItems) {
+        Library.loanedItems = loanedItems;
     }
 
     public static List<Person> getUsers() {
