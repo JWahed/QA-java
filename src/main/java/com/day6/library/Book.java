@@ -1,14 +1,13 @@
 package com.day6.library;
 
-import java.util.List;
 
 public class Book extends Items implements Readable {
 
     private String name;
     private String author;
     private String publisher;
-    private Long isbn;
-    private GenreEnum genre;
+    private String isbn;
+    private GenreEnum.Genre genre;
 
 
     public String getName() {
@@ -35,26 +34,26 @@ public class Book extends Items implements Readable {
         this.publisher = publisher;
     }
 
-    public Long getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(Long isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
-    public GenreEnum getGenre() {
+    public GenreEnum.Genre getGenre() {
         return genre;
     }
 
-    public void setGenre(GenreEnum genre) {
+    public void setGenre(GenreEnum.Genre genre) {
         this.genre = genre;
     }
 
 
     public Book() {}
 
-    public Book(String name, String author, String publisher, Long isbn, GenreEnum genre) {
+    public Book(String name, String author, String publisher, String isbn, GenreEnum.Genre genre) {
         this.name = name;
         this.author = author;
         this.publisher = publisher;
