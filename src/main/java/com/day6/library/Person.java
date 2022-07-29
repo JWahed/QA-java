@@ -2,15 +2,22 @@ package com.day6.library;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.UUID;
 
 
 public class Person {
 
+
+    private final String uuid = UUID.randomUUID().toString();
     private String firstName;
     private String lastName;
     private LocalDate dob;
     private List<Items> itemsLoaned;
 
+
+    public String getUniqueId() {
+        return uuid;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -62,8 +69,9 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Personal information {" +
-                "First name: '" + firstName + '\'' +
+        return "\nPersonal information {" +
+                "Unique id: '" + uuid + '\'' +
+                ", First name: '" + firstName + '\'' +
                 ", Last name: '" + lastName + '\'' +
                 ", Date of birth: " + dob +
                 ", Items currently loaned: " + itemsLoaned +
