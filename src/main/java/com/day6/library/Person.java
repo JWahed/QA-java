@@ -1,6 +1,7 @@
 package com.day6.library;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -12,7 +13,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private LocalDate dob;
-    private List<Items> itemsLoaned;
+    private List<Items> itemsLoaned = new ArrayList<>();
 
 
     public String getUniqueId() {
