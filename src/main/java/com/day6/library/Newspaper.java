@@ -63,12 +63,11 @@ public class Newspaper extends Items implements Readable {
                 '}';
     }
 
-    public void Read(Newspaper np, Person person) {
+    public void Read(Items np, Person person) {
         System.out.printf("Newspaper %s is currently being read by %s %s",
-                np.getName(), person.getFirstName(), person.getLastName()
+                ((Newspaper) np).getName(), person.getFirstName(), person.getLastName()
         );
     }
 
-    public void Read() {}
 
 }
