@@ -3,6 +3,8 @@ package com.day6.library;
 
 public class Book extends Items implements Readable {
 
+
+    private final int id = this.getId();
     private String name;
     private String author;
     private String publisher;
@@ -61,10 +63,12 @@ public class Book extends Items implements Readable {
         this.genre = genre;
     }
 
+
     @Override
     public String toString() {
-        return "Book information {" +
-                "Book Name: '" + name + '\'' +
+        return "\nBook information {" +
+                "Item id: '" + id + '\'' +
+                ", Book Name: '" + name + '\'' +
                 ", Author: '" + author + '\'' +
                 ", Publisher: '" + publisher + '\'' +
                 ", ISBN: " + isbn +
@@ -78,4 +82,5 @@ public class Book extends Items implements Readable {
                            ((Book) book).getName(), person.getFirstName(), person.getLastName()
         );
     }
+
 }
