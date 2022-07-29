@@ -73,9 +73,9 @@ public class Book extends Items implements Readable {
                 '}';
     }
 
-    public void Read(Book book, Person person) {
+    public void Read(Items book, Person person) {
         System.out.printf("Book %s is currently being read by %s %s",
-                           book.getName(), person.getFirstName(), person.getLastName()
+                           ((Book) book).getName(), person.getFirstName(), person.getLastName()
         );
     }
 }
