@@ -1,4 +1,4 @@
-package test.java;
+package test.java.day4;
 
 import main.java.com.day4.Factorial;
 import org.junit.jupiter.api.Test;
